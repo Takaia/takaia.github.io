@@ -1,0 +1,144 @@
+body {
+  background: #222;
+}
+.book {
+  width: 600px;
+  height: 438px;
+  position: relative;
+  perspective: 1500px;
+  margin: auto;
+}
+.book .page {
+  position: absolute;
+  top: 20px;
+  width: 50%;
+  height: 100%;
+  color: #fff;
+  font-size: 80px;
+  transition: all 0.8s ease;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+  z-index: 1;
+}
+.book .page.left {
+  left: 0;
+  transform-origin: right;
+}
+.book .page.right {
+  right: 0;
+  transform-origin: left;
+}
+.book .page.current {
+  z-index: 2;
+}
+
+.book .current.right.page.turn {
+  transform: rotateY(-180deg);
+}
+.book .current.left.page.turn {
+  transform: rotateY(180deg);
+}
+
+.book .next.left.page {
+  transform: rotateY(180deg);
+}
+.book .next.left.page.turn {
+  transform: rotateY(0deg);
+}
+.book .next.right.page {
+}
+
+.book .prev.right.page {
+  transform: rotateY(-180deg);
+}
+.book .prev.right.page.turn {
+  transform: rotateY(0deg);
+}
+.book .prev.left.page {
+}
+
+.book .page.tag {
+  background: url("https://github.com/Takaia/img/blob/master/open.png?raw=true");
+  background-size: cover;
+}
+.book .page.cover {
+  background: url("https://github.com/Takaia/img/blob/master/cover.png?raw=true");
+  background-color: #ffcadb;
+}
+.book .page.dedication {
+  background: url("https://github.com/Takaia/img/blob/master/dedication.png?raw=true");
+  background-color: #ffcadb;
+}
+.book .page.one {
+  background: url("https://github.com/Takaia/img/blob/master/forward.png?raw=true");
+  background-color: #fff;
+}
+.book .page.two {
+  background: url("https://github.com/Takaia/img/blob/master/Ralsei2.png?raw=true");
+  background-color: #d3eff5;
+}
+.book .page.three {
+  background: url("https://github.com/Takaia/img/blob/master/ralsei3.png?raw=true");
+  background-color: #d3eff5;
+}
+.book .page.four {
+  background: url("https://github.com/Takaia/img/blob/master/ralsei3.2.png?raw=true");
+}
+.book .page.five {
+  background: url("https://github.com/Takaia/img/blob/master/ralsei4.png?raw=true");
+  background-color: #3c3c3c;
+}
+.book .page.six {
+  background: url("https://github.com/Takaia/img/blob/master/ralsei6.png?raw=true");
+  background-color: #3c3c3c;
+}
+.book .page.seven {
+  background: url("https://github.com/Takaia/img/blob/master/ralsei7.png?raw=true");
+  background-color: #3c3c3c;
+}
+.book .page.eight {
+  background: url("https://github.com/Takaia/img/blob/master/ralsei8.png?raw=true");
+  background-color: #3c3c3c;
+}
+.book .page.nine {
+  background: url("https://github.com/Takaia/img/blob/master/ralsei9.png?raw=true");
+  background-color: #3c3c3c;
+}
+.book .page.ten {
+  background: url("https://github.com/Takaia/img/blob/master/ralsei10.png?raw=true");
+  background-color: #fff;
+}
+.book .page.eleven {
+  background: url("https://github.com/Takaia/img/blob/master/ralsei12.png?raw=true");
+  background-color: #fff;
+}
+.book .page.end {
+  background: url("https://github.com/Takaia/img/blob/master/end.png?raw=true");
+  background-color: #ffcadb;
+}
+.book .page.space {
+  background: transparent;
+}
+
+.btns {
+  text-align: center;
+  width: 600px;
+  margin: 40px auto 0 auto;
+}
+.btns button {
+  font-size: 30px;
+  margin: 0 10px;
+  background:#000;
+  width:62px;
+  height:52px;
+  border: none;
+  color: #614e6b;
+  outline: none;
+  border: solid 2px #614e6b;
+}
+
+button:hover{
+  border: solid 2px #ffc90e;
+  color: #ffc90e;
+}
