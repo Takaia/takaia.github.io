@@ -124,7 +124,7 @@ body {
 .btns {
   text-align: center;
   width: 600px;
-  margin: 40px auto 0 auto;
+  margin: 40px auto 50px auto;
 }
 .btns button {
   font-size: 30px;
