@@ -11,9 +11,9 @@ body {
 
   .card {
     width: 50em;
-    max-width: 100%;
+    max-width: 100vh;
     height: 35em;
-    max-height: 70vw;
+    max-height: 80vw;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -25,14 +25,9 @@ body {
   .panel {
     width: 50%;
     height: 100%;
-    padding: 20px;
     position: absolute;
     left: 50%;
-    font-size: 16px;
-    line-height: 18px;
-    color: black;
-    background-color: blanchedalmond;
-    transition: transform .5s;
+    transition: transform .9s;
     transform: rotateY(-180deg);
     backface-visibility: hidden;
     transform-style: preserve-3d;
@@ -62,35 +57,29 @@ body {
   input:checked ~ .panel:nth-of-type(2n-1) ~ .panel:nth-of-type(2n-1) {
     z-index: 1;
   }
-  input:checked + .panel + .panel + input + .panel {
-    z-index: 2 !important;
-  }
 
   .outside {
     width: 50%;
     height: 100%;
-    top: 0;
-    background-color: #e9ca90;
+    background-color: #dee4e7;
   }
-  .outside h1 {
-    color: #5d4d83;
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 11px;
     text-align: center;
-    text-shadow: -1px -1px 2px rgba(0, 0, 0, 0.5);
-    margin-top: 50%;
     position: relative;
+    top: 85%;
   }
-  .outside h1::after {
-    content: "";
-    display: block;
-    width: 60px;
-    position: absolute;
-    bottom: -20px;
-    margin-left: -30px;
-    left: 50%;
-    border-top: 1px solid #5d4d83;
-    box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.5);
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+    top: 35%;
   }
   .outside:first-of-type, .outside:last-of-type {
-    background-image: none;
-    background-color: #b7f999;
+    background-color: #99ddf9;
   }
